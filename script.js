@@ -6,7 +6,7 @@ function volume_sphere() {
     let radius = parseFloat(radiusInput.value);
 
     if (isNaN(radius) || radius < 0) {
-        volumeOutput.value = '';
+        volumeOutput.value = NaN;
         alert("Please enter a valid positive number for radius.");
         return false; // prevent form from submitting
     }
